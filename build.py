@@ -221,7 +221,8 @@ function place_marker(mlat, mlon) {
     print >> out, '<h2>With name</h2>'
     print >> out, thing_list(sort_by_name(i for i in other if 'name' in i))
     print >> out, '<h2>No name</h2>'
-    print >> out, thing_list(i for i in other if 'name' not in i)
+    print >> out, thing_list(i for i in other if 'name' not in i), '<p>'
 
+    print >> out, 'Data is copyright OpenStreetMap and contributors License: <a href="http://creativecommons.org/licenses/by-sa/2.0/">Creative Commons BY-SA 2.0</a><br>'
     print >> out, '</div>'
     print >> out, '</body>\n</html>\n'
